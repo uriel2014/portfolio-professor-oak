@@ -1,0 +1,35 @@
+/*Additional Styling is needed due to the
+Bootstrap Styling having margins bewteen each div element
+section. We will also add padding and appropriate styling to
+customize the webpage.*/
+
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+/* We need to get rid of the pre-defined margin-bottom and border-radius
+properities of navbar*/
+
+.jumbotron{
+  margin-bottom:0;
+  background-color:maroon;
+  color: white;
+}
+
+.row img{
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.row p{
+  margin-bottom: 15px;
+  height:100px;
+  padding-top: 5px;
+}
+
+
+footer{
+  background-color: maroon;
+  color: white;
+  padding:25px;
+}

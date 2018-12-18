@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor Oak</title>
+    <!-- Icon for the Tab -->
+    <link rel="icon" href="./resources/images/Pokemon_logo.svg.png" type="image/x-icon">
+    <!--Stylesheets to refer to and link-->
+    <link rel="stylesheet" href="./resources/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./resources/styles.css" type="text/css">
+  </head>
+  <body>
+
+    <!-- Navigation Bar Section -->
+
+    <nav class="navbar navbar-inverse">
+      <!-- Class of Navbar to create the navbar, navbar-inverse is to provide a black background navigation bar-->
+      <div class="container-fluid"> <!-- Occupy the 100% of the width of the webpage-->
+        <div class="navbar-header">
+          <!-- Navbar-header: Added to a container element that contains the link/element that represent a logo or a header-->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- the button is to be applied when data is collapsed, meaning for smaller screens, it will use icons to
+          represent the menu navigation bar.
+          Navbar-toggle:styles the button that should open the navbar on small screens, mean when the data-toggle is collapsed
+          it is followed by three icon-bar elements that will be used in the navbar for collapse elements.
+          we also give that section an id attribute to reference-->
+         <a class="navbar-brand" href="#">Portfolio</a>
+         <!-- Navbar-brand: Added to a link or a header element inside the navbar to represent a logo or a header-->
+        </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- In this section, the div element will collapse with smaller screens, we also give the class navbar-collapse so
+        it activates the navbar to collapse. Give the id attribute to reference this div. -->
+       <ul class="nav navbar-nav"> <!-- nav and navbar-nav are used to reference a list inside a navigation bar-->
+         <li class="active"><a href="#">Home</a></li> <!-- give this link an active status -->
+         <li><a href="#">About</a></li>
+         <li><a href="#">Gallery</a></li>
+         <li><a href="#">Contact</a></li>
+       </ul>
+       <ul class="nav navbar-nav navbar-right"> <!-- Again with the reference of list items but also make it aligned right
+         with the navbar-right class-->
+         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> <!-- Give this an icon -->
+       </ul>
+      </div>
+     </div>
+    </nav>
+
+<!--JUMBOTRON SECTION -->
+<div class="jumbotron"> <!-- Adds the jumbotron class -->
+  <div class="container text-center"> <!-- We are making the section not all of the width of the webpage.
+    It will take into account some padding from the outside -->
+    <h1>Professor Samson Oak</h1>
+    <p>"Hello there! Welcome to the world of Pokémon! My name is Oak! People call me the Pokémon Prof!
+      This world is inhabited by creatures called Pokémon! For some people, Pokémon are pets.
+       Other use them for fights. Myself… I study Pokémon as a profession.</p>
+  </div>
+</div>
+
+
+<!-- WORK SECTION -->
+<div class="container-fluid bg-primary text-center">
+  <!--bg-primary is to give this section a background color of blue -->
+  <h3>Some of my Work in Pokemon Research</h3><br>
+  <div class="row">
+    <!-- Makes all the content be refelcted in a 12 column row. -->
+    <div class="col-sm-3">
+      <!-- Each image and text will take up 3 columns of the webpage-->
+      <p>My work is based in the wonderful Kanto Region, Here is a map indicating
+      the landscape of the region.</p>
+      <img src="./resources/images/kanto-map.png" class="img-responsive" style="width:100%" alt="Image">
+      <!--class of img-responsive will make the image responsive -->
+    </div>
+    <div class="col-sm-3">
+      <p>Here is a sample of an electronic encyclopedia, I have developed for new trainers
+      to explore and help me obtain more information on species of pokemon.</p>
+      <img src="./resources/images/Kanto-pokedex.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p> Below is an image of the starting pokemon new trainers can select from as they start their
+      adventures in the Kanto Region.</p>
+      <img src="./resources/images/kantostarters.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>This is my personal laboratory, where I am the head of the scentist, working with exceptional
+      staff to collaborate and work on countless projects.</p>
+      <img src="./resources/images/lab-oak.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-primary text-center">
+  <div class="row">
+    <div class="col-sm-3">
+      <p>This is the city that I currently reside to work on my Research, this is known as
+      Pallet Town.</p>
+      <img src="./resources/images/pallet-town.png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>I often venture to Pewter City Musuem to collaborate with scientists on Fossil Pokemon and
+      other theories regarding the ancient world.</p>
+      <img src="./resources/images/pewter-museum.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>The Seafoam Islands is one of my favorite tourist attractions of the Kanto Region,
+      I frequently travel there to research the pokemon that live in this mysterious place.</p>
+      <img src="./resources/images/seafoam-islands.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>I am a mentor and coach to those starting trainers and frequently follow up with them
+      in their journeys across the Kanto Region.</p>
+      <img src="./resources/images/starting-trainers.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <!-- Text-center class moves content to the center of the element. -->
+  <address>
+    Oak laboratory Incorporated<br>
+    Pallet Town<br>
+    email: poak@oli.edu <br>
+  </address>
+</footer>
+
+   <!--Scripts to use-->
+   <!--Main Jquery Script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+        <!-- Bootstrap scripts for jquery and Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
